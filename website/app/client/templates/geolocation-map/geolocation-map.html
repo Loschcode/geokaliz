@@ -1,0 +1,17 @@
+<template name="GeolocationMap">
+
+  <div class="geolocation-map">
+
+    {{#unless geolocationMapError}}
+
+      {{>googleMap name="MainMap" options=geolocationMapOptions}}
+
+    {{else}}
+
+      Geolocation failed: {{geolocationMapError}}
+
+    {{/unless}}
+
+  </div>
+
+</template>

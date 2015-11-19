@@ -1,0 +1,53 @@
+<template name="Home">
+
+  <div class="home">
+
+    <!-- Header : Title -->
+    {{#contentFor "headerTitle"}}
+
+      <h1 class="title">Geokaliz</h1>
+
+    {{/contentFor}}
+
+    <!-- Header : Button Right -->
+    {{#contentFor "headerButtonRight"}}
+
+      {{#if isFocusedOnMarker}}
+        <button class="button button-icon ion-ios-navigate" id="revoke-focus"></button>
+      {{else}}
+        <button class="button button-icon ion-ios-navigate-outline" id="become-focus"></button>
+      {{/if}}
+
+    {{/contentFor}}
+
+    <!-- Map in the middle -->
+    {{#ionContent class="has-header has-footer"}}
+
+      {{>GeolocationMap}}
+
+    {{/ionContent}}
+
+    <!-- Footer : Target Setup -->
+    {{#if myTarget.isActivated}}
+
+      <!-- Revoke target button -->
+      <div class="bar bar-balanced bar-footer">
+        <div class="title title-center">
+          <button class="button button-icon ion-checkmark-circled mini-margin" id="revoke-target"> You are a target</button>
+        </div>
+      </div>
+
+    {{else}}
+
+      <!-- Become target button -->
+      <div class="bar bar-dark bar-footer">
+        <div class="title title-center">
+          <button class="button button-icon ion-close-circled mini-margin" id="become-target"> You are not a target</button>
+        </div>
+      </div>
+
+    {{/if}}
+
+  </div>
+
+</template>
