@@ -2,6 +2,13 @@
 
   <div class="home">
 
+    <!-- Header : Button Left -->
+    {{#contentFor "headerButtonLeft"}}
+
+      <button class="button button-icon ion-person" id="people"><strong>{{peopleOnMapCounter}}</strong></button>
+
+    {{/contentFor}}
+
     <!-- Header : Title -->
     {{#contentFor "headerTitle"}}
 

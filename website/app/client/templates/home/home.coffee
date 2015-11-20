@@ -20,6 +20,10 @@ Template.Home.events {
 
 Template.Home.helpers {
 
+  peopleOnMapCounter: =>
+
+    return Targets.find().count()
+
   myTarget: =>
 
     return Targets.findOne({_id: Session.get('myTargetId')})
@@ -32,6 +36,11 @@ Template.Home.helpers {
 
 # Home: Lifecycle Hooks
 Template.Home.onCreated ->
+
+  # General map loading
+  IonLoading.show({
+    customTemplate: '<h3>Loading…</h3><p>We are retrieving the map details ...</p>',
+  })
 
 Template.Home.onRendered ->
 
