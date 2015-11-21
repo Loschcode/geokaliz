@@ -1,0 +1,1 @@
+{"version":3,"sources":["meteor://💻app/lib/methods.coffee"],"names":[],"mappings":";;;;;;;;;AAAA,MAAM,CAAC,OAAP,CAEE;AAAA,mBAAiB;AAEf,WAAO,MAAP,CAFe;EAAA,CAAjB;CAFF","file":"/lib/methods.coffee.js","sourcesContent":["Meteor.methods\n\n  getConnectionId: ->\n\n    return \"pwet\"\n\n    #if (!Meteor.userId())\n    #  throw new Meteor.Error(\"not-authorized\")\n"]}

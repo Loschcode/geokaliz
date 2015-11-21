@@ -19,4 +19,10 @@
   "generator": {
     "comments": "true"
   }
+
+  //"mup": {
+  //  "version": "mup",
+  //  "environment": "../config/production"
+  //}
+
 }

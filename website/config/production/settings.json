@@ -1,7 +1,5 @@
 {
   "public": {
     "MAP_ZOOM": 15
-  },
-
-  "sample": "value"
+  }
 }
