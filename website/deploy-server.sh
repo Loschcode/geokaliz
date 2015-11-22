@@ -1,6 +1,3 @@
-# SSH CONNECTION
-ssh root@pantouflesnginx << EOF
-
 # Setup
 export ENV=production
 export PROJECT_PATH=/var/www/geokaliz
@@ -21,5 +18,3 @@ cd $PROJECT_PATH/website
 
 # Launch
 node $PROJECT_PATH/website/build/bundle/main.js
-
-EOF
