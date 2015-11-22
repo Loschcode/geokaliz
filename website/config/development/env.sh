@@ -2,7 +2,3 @@
 # You can use it to put environment variables you want accessible
 # to the server side of your app by using process.env.MY_VAR
 #
-# Example:
-
-export MONGO_URL="mongodb://localhost:27017/geokaliz"
-export ROOT_URL="http://localhost:3000"

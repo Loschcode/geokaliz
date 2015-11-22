@@ -1,10 +1,10 @@
-/*App.info({
+App.info({
 
   name: 'Geokaliz',
   description: 'Did you lose your friend ? No worry.',
   version: '0.0.1'
 
-});*/
+});
 
 //App.icons({
   // iOS
