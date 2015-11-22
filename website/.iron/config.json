@@ -18,6 +18,10 @@
 
   "generator": {
     "comments": "true"
+  },
+
+  "mup": {
+    "version": "mup"
   }
 
 }

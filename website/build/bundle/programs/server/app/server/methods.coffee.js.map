@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/server/methods.coffee"],"names":[],"mappings":";;;;;;;;;AAAA,MAAM,CAAC,OAAP,CACE;AAAA,wBAAsB,aAAtB;CADF","file":"/server/methods.coffee.js","sourcesContent":["Meteor.methods\n  'server/method_name': ->\n"]}

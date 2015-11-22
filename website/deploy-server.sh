@@ -11,7 +11,7 @@ export METEOR_SETTINGS=$(cat $PROJECT_PATH/website/config/$ENV/settings.json)
 # Pull / Build
 cd $PROJECT_PATH/website
 git pull
-iron build --architecture=os.linux.x86_64
+sudo iron build
 cd $PROJECT_PATH/website/build/bundle/programs/server
 npm install
 cd $PROJECT_PATH/website

@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/server/publish.coffee"],"names":[],"mappings":";;;;;;;;;AAGA,MAAM,CAAC,OAAP,CAAe,YAAf,EAA6B;AAE3B,SAAO,OAAO,CAAC,IAAR,EAAP,CAF2B;AAAA,CAA7B","file":"/server/publish.coffee.js","sourcesContent":["#\n# Get all the targets\n#\nMeteor.publish 'allTargets', ->\n\n  return Targets.find()"]}
