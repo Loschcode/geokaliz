@@ -33,10 +33,18 @@ Template.GeolocationMap.helpers {
       IonLoading.hide()
 
       # Error shows up
+      Session.set('lastLoader', 'geolocation_error')
       IonLoading.show({
         customTemplate: "<h3>Error</h3><p>We weren't able to retrieve the map details.<br />Please enable geolocation and refresh your page </p>",
         backdrop: true
       });
+
+    else
+
+      # We hide the loader only if it was previously a geolocation error
+      # Otherwise it would cut the other loaders constantly
+      if Session.get('lastLoader') == 'geolocation_error'
+        IonLoading.hide()
 
     return error and error.message
 

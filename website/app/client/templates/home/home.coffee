@@ -38,6 +38,7 @@ Template.Home.helpers {
 Template.Home.onCreated ->
 
   # General map loading
+  Session.set('lastLoader', 'loading_map_details')
   IonLoading.show({
     customTemplate: '<h3>Loading…</h3><p>We are retrieving the map details ...</p>',
   })
