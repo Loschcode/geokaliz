@@ -37,7 +37,7 @@
 
     "PORT": "3000",
     "ROOT_URL": "http://geokaliz.laurent.tech",
-    "MONGO_URL": "mongodb://localhost:27017/geokaliz",
+    "MONGO_URL": "mongodb://localhost:27017/geokaliz"
     //"DDP_DEFAULT_CONNECTION_URL": "http://geokaliz.laurent.tech"
 
   },

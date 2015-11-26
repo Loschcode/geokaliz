@@ -1,8 +1,11 @@
 <template name="MasterLayout">
 {{#ionBody}}
-  {{> ionNavBar}}
+
+  {{> ionNavBar name="Lulz" alignTitle="left"}}
+
   {{#ionNavView}}
     {{> yield}}
   {{/ionNavView}}
+
 {{/ionBody}}
 </template>
