@@ -25,19 +25,40 @@ Template.GeolocationMap.helpers {
   # Error if any on map loading
   geolocationMapError: =>
 
+    #
+    # Geolocation is very UNSTABLE
+    # It might shows an error and right after not make this error anymore
+    # Therefore we never consider errors
+    #
+    if Session.get('geolocationEnabled')
+      return false
+
     error = Geolocation.error()
 
-    if error and error.message
+    # 
+    # If there's any error or the uptime is more than 10 seconds and
+    # The geolocation isn't set as enabled - sometimes it's a silent system with the phones
+    # 
+    if (error and error.message) or (Session.get("uptime") > 10)
 
-      # If there's any error showing up before
-      IonLoading.hide()
+      # 
+      # If it's not already displayed
+      # 
+      # NOTE : This system will be re-read every second since it calls Session.get("uptime")
+      # I made the choice not to clearInterval in case the user changes his geolocation settings
+      # And let the app up
+      # 
+      unless Session.get('lastLoader') == 'geolocation_error'
 
-      # Error shows up
-      Session.set('lastLoader', 'geolocation_error')
-      IonLoading.show({
-        customTemplate: "<h3>Error</h3><p>We weren't able to retrieve the map details.<br />Please enable geolocation and refresh your page </p>",
-        backdrop: true
-      });
+        # If there's any error showing up before
+        IonLoading.hide()
+
+        # Error shows up
+        Session.set('lastLoader', 'geolocation_error')
+        IonLoading.show({
+          customTemplate: "<h3>Oops !</h3><p>We weren't able to retrieve the map details.<br />Please enable geolocation and restart Geokaliz.</p>",
+          backdrop: true
+        });
 
     else
 
@@ -55,6 +76,8 @@ Template.GeolocationMap.helpers {
 
     # Initialize the map once we have the latLng.
     if GoogleMaps.loaded() and latLng
+
+      Session.set('geolocationEnabled', true)
 
       if Meteor.isCordova
 
@@ -93,6 +116,18 @@ Template.GeolocationMap.helpers {
 # onCreated
 #
 Template.GeolocationMap.onCreated =>
+
+  # Uptime from creation
+  uptime_system = ->
+
+    if !Session.get("uptime")
+      Session.set("uptime", 0)
+
+    Session.set("uptime", (Session.get("uptime")+1))
+
+  Meteor.setInterval(uptime_system, 1000)
+
+  Session.get('geolocationEnabled', false)
 
   # When it's ready, we process the position
   GoogleMaps.ready 'MainMap', (googleMap) =>

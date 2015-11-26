@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.id1pmplkjyz2br9hauaw3" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.id1pmplkjyz2br9hauaw3" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="DisallowOverscroll" value="false" />
@@ -73,8 +73,8 @@
     <splash height="1496" src="resources/ipad_landscape_2x.splash.png" width="2048" />
     <splash height="1536" src="resources/ipad_landscape_2x.splash.png" width="2048" />
     <name>Geokaliz</name>
-    <description>Did you lose your friend ? No worry.</description>
-    <author email="n/a" href="n/a">A Meteor Developer</author>
+    <description>Lost in the city ? No worry.</description>
+    <author email="bonjour@laurentschaffner.com" href="http://www.laurentschaffner.com">Laurent Schaffner</author>
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="deployment-target" value="7.0" />
@@ -93,7 +93,6 @@
     <access origin="cdv:*" />
     <access origin="gap:*" />
     <access origin="http://meteor.local/*" />
-    <access origin="*://localhost/*" />
-    <access origin="*://10.0.2.2/*" />
-    <access origin="*://maps.googleapis.com/*" />
+    <access origin="*://geokaliz.laurent.tech/*" />
+    <access origin="*" />
 </widget>

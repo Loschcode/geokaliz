@@ -396,59 +396,35 @@
     },
     {
       "sourceMap": "app/lib/collections/targets.coffee.js.map",
-      "path": "app/lib/collections/targets.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/lib/collections/targets.coffee.js"
     },
     {
       "sourceMap": "app/lib/controllers/home_controller.coffee.js.map",
-      "path": "app/lib/controllers/home_controller.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/lib/controllers/home_controller.coffee.js"
     },
     {
       "sourceMap": "app/lib/methods.coffee.js.map",
-      "path": "app/lib/methods.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/lib/methods.coffee.js"
     },
     {
       "sourceMap": "app/lib/routes.coffee.js.map",
-      "path": "app/lib/routes.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/lib/routes.coffee.js"
     },
     {
       "sourceMap": "app/server/bootstrap.coffee.js.map",
-      "path": "app/server/bootstrap.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/server/bootstrap.coffee.js"
     },
     {
       "sourceMap": "app/server/connection.coffee.js.map",
-      "path": "app/server/connection.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/server/connection.coffee.js"
     },
     {
       "sourceMap": "app/server/methods.coffee.js.map",
-      "path": "app/server/methods.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/server/methods.coffee.js"
     },
     {
       "sourceMap": "app/server/publish.coffee.js.map",
-      "path": "app/server/publish.coffee.js",
-      "assets": {
-        ".gitkeep": "assets/app/.gitkeep"
-      }
+      "path": "app/server/publish.coffee.js"
     },
     {
       "sourceMap": "packages/service-configuration.js.map",

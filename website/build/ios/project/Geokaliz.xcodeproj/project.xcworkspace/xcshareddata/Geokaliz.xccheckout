@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4DF49564-71CE-4E41-8446-016E2CE5B4A4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Geokaliz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C858F765EEB7C557CC631A3DFA3A66B1537DA564</key>
+		<string>ssh://bitbucket.org/Loschcode/geokaliz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>website/build/ios/project/Geokaliz.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C858F765EEB7C557CC631A3DFA3A66B1537DA564</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/Loschcode/geokaliz.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C858F765EEB7C557CC631A3DFA3A66B1537DA564</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C858F765EEB7C557CC631A3DFA3A66B1537DA564</string>
+			<key>IDESourceControlWCCName</key>
+			<string>geokaliz_lo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
