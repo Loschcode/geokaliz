@@ -11,4 +11,3 @@ Template.MasterLayout.events {
     Session.set('isFocusedOnMarker', false)
 
 }
-
