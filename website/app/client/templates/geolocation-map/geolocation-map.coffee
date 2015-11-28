@@ -39,7 +39,7 @@ Template.GeolocationMap.helpers {
     # If there's any error or the uptime is more than 10 seconds and
     # The geolocation isn't set as enabled - sometimes it's a silent system with the phones
     # 
-    if (error and error.message) or (Session.get("uptime") > 10)
+    if (error and error.message) or (Session.get("uptime") > 30)
 
       # 
       # If it's not already displayed
@@ -56,7 +56,7 @@ Template.GeolocationMap.helpers {
         # Error shows up
         Session.set('lastLoader', 'geolocation_error')
         IonLoading.show({
-          customTemplate: "<h3>Oops !</h3><p>We weren't able to retrieve the map details.<br />Please enable geolocation and restart Geokaliz.</p>",
+          customTemplate: "<h3>Oops !</h3><p>We weren't able to retrieve the map details.<br />Please enable geolocation and restart Geokaliz.</p> (`#{error.message}`)",
           backdrop: true
         });
 

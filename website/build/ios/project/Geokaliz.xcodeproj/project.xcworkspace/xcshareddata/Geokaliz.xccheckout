@@ -14,11 +14,11 @@
 		<string>ssh://bitbucket.org/Loschcode/geokaliz.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>website/build/ios/project/Geokaliz.xcodeproj</string>
+	<string>website/app/.meteor/local/cordova-build/platforms/ios/Geokaliz.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C858F765EEB7C557CC631A3DFA3A66B1537DA564</key>
-		<string>../../../../../..</string>
+		<string>../../../../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://bitbucket.org/Loschcode/geokaliz.git</string>

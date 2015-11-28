@@ -2,7 +2,7 @@ App.info({
 
   name: 'Geokaliz',
   description: 'Lost in the city ? No worry.',
-  version: '1.0.0',
+  version: '1.0.1',
 
   //id: 'com.loschcode.geokaliz',
   name: 'Geokaliz',
@@ -32,10 +32,12 @@ App.launchScreens({
   "iphone6": "resources/splashes/iphone6.png", // 750x1334
   "iphone6p_portrait": "resources/splashes/iphone6p_portrait.png", // 2208x1242
   "iphone6p_landscape": "resources/splashes/iphone6p_landscape.png", 
+  
   "ipad_portrait": "resources/splashes/ipad_portrait.png",
   "ipad_portrait_2x": "resources/splashes/ipad_portrait_2x.png",
   "ipad_landscape": "resources/splashes/ipad_landscape.png",
   "ipad_landscape_2x": "resources/splashes/ipad_landscape_2x.png",
+
   "android_ldpi_portrait": "resources/splashes/android_ldpi_portrait.png",
   "android_ldpi_landscape": "resources/splashes/android_ldpi_landscape.png",
   "android_mdpi_portrait": "resources/splashes/android_mdpi_portrait.png",
